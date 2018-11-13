@@ -1,0 +1,14 @@
+{
+  "IMAGE_SIZE": [224, 224, 3],
+  "NUM_CLASSES": 7178,
+  "DATA_DIR": "../data/",
+  "LOG_DIR": "../logs/",
+  "MODEL_DIR": "../model/",
+  "SUB_DIR": "../submission/",
+  "OUT_DIR": "../output/",
+  "TRAIN_IMAGE_DIRNAME": "stage_1_train_images",
+  "TEST_IMAGE_DIRNAME": "stage_1_test_images",
+  "REN_LOCAL_MODEL_DIR": "/media/ren/OS/comp/model/",
+  "REN_LOCAL_SUB_DIR": "/media/ren/OS/comp/submission/",
+  "REN_LOCAL_OUT_DIR": "/media/ren/OS/comp/output/"
+}

@@ -1,0 +1,8 @@
+# directories
+data
+model
+submission
+output
+.idea
+.ipynb_checkpoints
+__pycache__
