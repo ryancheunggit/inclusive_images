@@ -5,7 +5,7 @@ Repo for 2018 Nips competition
 
 ### TRAINING: 
 1. Training a vanilla ResNet50 with multi-label classifier head on the training set with binary cross-entropy loss seems overfitting really quickly. 
-2. Focal loss is a bit hard to start with. It might be good to warm up the model with BCE and then swap the loss to focal loss. 
+2. Focal loss is a bit hard to start with. It might be good to warm up the model with BCE and then swap the loss to focal loss. Maybe because the ouput is 7178 class, and for small batches, focal loss here is hard to startwith?
 3. F2 loss which I found towards the end seems the best choice. (Well, it so happens the competition metric is also f2). So whenever possible, optimize directly according to the metric. 
 4. As a result of 1, much of my time was spent to set up a multi-task setting. My model was trained on classifier output and an label embedding output. I was hopping that, with proper weighting, the cosine proximity loss from embedding output can help with generalization. 
 5. I found variants of ResNets are a bit harder to train on this dataset then vanilla ResNet.   
