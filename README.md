@@ -16,9 +16,10 @@ Repo for 2018 Nips competition
 2. I tried to directly use the predicted embedding to generate labels by sorting label embeddings with the prediction using cosine similarity and take the top k. It gives better coverage with top k predictions, but worse f2 than the classifier + threshold method. 
 + To summarize: I wasn't able to use label embedding to directly generating good predictions, but it helped during training phase acting a sort of like a regularizer. 
 
-### ABANDONED ADAPTATION: 
+### ABANDONED ADAPTATION / THRESHOLDING: 
 1. Very early in the competition I tried to fine tune my trained ResNet on the 1000 tuning set, as a result, the adapted model gives very promising public leaderboard score. But I think it is totally against the spirit of the task and given up on this approach. 
 2. I did not try the adapted model on stage 2. But I suspect the adaptation would still gives a lot information to the model about how the labeling is done differently between the training set and testing set.  
+3. I also decided not to tune thresholds using the tuning set, due to the same rational, and I believe that I am eating the consequences of my decision.  
 + To summarize: It is very confusing to me that google provided this 1000 image tuning set. An analogy I can think of is: 
 > Say, you are taking a course and the professor gives you a bunch exercise to practice with, which are mostly multiple choice questions with 3 or more correct answers. There are two exams for the course: a midterm and an final. Your course grade depends only on the final. During the midterm, the professor wrote a few answers on the blackboard, and you notice they all have 1 to 2 correct answers, and your peers who adjusted their answers did very well on the midterm. The question now is, should you adjust your solutions during the final or not.   
 
