@@ -24,3 +24,8 @@ Repo for 2018 Nips competition
 > Say, you are taking a course and the professor gives you a bunch exercise to practice with, which are mostly multiple choice questions with 3 or more correct answers. There are two exams for the course: a midterm and an final. Your course grade depends only on the final. During the midterm, the professor wrote a few answers on the blackboard, and you notice they all have 1 to 2 correct answers, and your peers who adjusted their answers did very well on the midterm. The question now is, should you adjust your solutions during the final or not.   
 
 + If this type of adaptation is useful towards stage 2, I think it would be a fault of the host in the competition setting. It is irony that the competition overview stated that the purpose of the competition is to promote methods that depends not on gathering new images, and in reality the awards goes to people who explicitly used some test images to adapt their model. 
+
+### LESSONS
+1. Based on 2nd and 3rd place competitors' sharing, they confirmed that tuning based on the tuning set indeed gives a very big boost in scores.  
+2. Based on 3rd and 9th place sharing, I believe their untuned model is still much better than mine, and the reason is due to much heavier image augumentation, for that they noticed the images from test set is much worse in image quality.  
++ To summarize: To archive better baseline model - use heavier augumentation to mitigate the image quality problem. To archive better calibrated model - use the tuning set to mitigate the discrepency between the labeling difference between training and testing datasets.  
