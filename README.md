@@ -28,4 +28,4 @@ Repo for 2018 Nips competition
 ### LESSONS
 1. Based on 2nd and 3rd place competitors' sharing, they confirmed that tuning based on the tuning set indeed gives a very big boost in scores.  
 2. Based on 3rd and 9th place sharing, I believe their untuned model is still much better than mine, and the reason is due to much heavier image augumentation, for that they noticed the images from test set is much worse in image quality.  
-+ To summarize: To archive better baseline model - use heavier augumentation to mitigate the image quality problem. To archive better calibrated model - use the tuning set to mitigate the discrepency between the labeling difference between training and testing datasets.  
++ To summarize: To archive better baseline model - use heavier augumentation to mitigate the image quality problem. To archive better calibrated model - use the tuning set to mitigate the discrepency between the labeling difference between training and testing datasets. (This only works because, Google screwed up with the test data, such that that the stage 1 tuning set is so powerful towards stage 2 scoring. I still believe it shouldn't, but who cares anyway.)  
